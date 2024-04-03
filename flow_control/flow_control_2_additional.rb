@@ -1,5 +1,9 @@
 def converted(words)
-  new_words = words.length > 10 ? words.upcase! : words
+  if words.length > 10 
+    words.upcase
+  else
+    words
+  end
 end
 
 puts converted("hello")
